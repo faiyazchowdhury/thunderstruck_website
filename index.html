@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thunderstruck - Real Sparks Come From Dark Clouds</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom styles to complement Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1A1A2E; /* Dark blue background from app theme */
+            color: #E0E0E0; /* Light text color */
+        }
+        .text-glow {
+            text-shadow: 0 0 8px rgba(250, 208, 44, 0.7), 0 0 20px rgba(224, 176, 255, 0.5);
+        }
+        .hero-gradient {
+            background: radial-gradient(ellipse at bottom, #162447 0%, #1A1A2E 70%);
+        }
+        .btn-primary {
+            background-color: #FAD02C; /* Gold accent color */
+            color: #1A1A2E;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(250, 208, 44, 0.3);
+        }
+        .btn-secondary {
+            background-color: transparent;
+            color: #FAD02C;
+            border-color: #FAD02C;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #FAD02C;
+            color: #1A1A2E;
+        }
+        /* Animation for elements fading in on scroll */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/50 backdrop-blur-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white">Thunderstruck ⚡️</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#features" class="hover:text-yellow-300 transition-colors">Features_TEST</a>
+                <a href="#philosophy" class="hover:text-yellow-300 transition-colors">Philosophy</a>
+                <a href="#how-it-works" class="hover:text-yellow-300 transition-colors">How It Works</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="pt-24">
+        <section class="hero-gradient text-center py-20 md:py-32 px-6">
+            <div class="container mx-auto">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+                    Stop Swiping. Start Connecting.
+                </h2>
+                <p class="mt-6 text-xl md:text-2xl font-semibold text-yellow-300 text-glow">
+                    "Real sparks come from dark clouds."
+                </p>
+                <p class="mt-8 max-w-2xl mx-auto text-lg text-gray-300">
+                    Thunderstruck is a new kind of dating app that finds your one best match a day through a deeper, more authentic process. No more endless swiping. No more distractions. Just one real chance at connection.
+                </p>
+                <div class="mt-12 flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="#" class="btn-primary font-bold py-3 px-8 rounded-full w-full sm:w-auto">Get on iOS (Coming Soon)</a>
+                    <a href="#" class="btn-primary font-bold py-3 px-8 rounded-full w-full sm:w-auto">Get on Android (Coming Soon)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Mockup Image -->
+         <section class="container mx-auto -mt-16 md:-mt-24 px-6">
+            <img src="https://placehold.co/1200x600/1A1A2E/FFFFFF?text=Thunderstruck+App+Preview" 
+                 alt="A preview of the Thunderstruck app interface" 
+                 class="rounded-2xl shadow-2xl mx-auto"
+                 onerror="this.onerror=null;this.src='https://placehold.co/1200x600/1A1A2E/FFFFFF?text=Image+Not+Available';">
+        </section>
+
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-20 px-6 fade-in-section">
+            <div class="container mx-auto text-center">
+                <h3 class="text-3xl md:text-4xl font-bold text-white">A More Deliberate Way to Date</h3>
+                <p class="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">Our unique process is designed to find deep compatibility.</p>
+                <div class="mt-16 grid md:grid-cols-3 gap-12">
+                    <!-- Step 1 -->
+                    <div class="space-y-4">
+                         <div class="w-16 h-16 bg-slate-800 rounded-full mx-auto flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-white">Rate Anonymous Sparks</h4>
+                        <p class="text-gray-400">Instead of profiles, you'll see individual photos and prompts from the community. Judge the content, not the cover.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="space-y-4">
+                        <div class="w-16 h-16 bg-slate-800 rounded-full mx-auto flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-white">The Daily "Scryfall"</h4>
+                        <p class="text-gray-400">Once a day, our algorithm analyzes all the ratings and finds your single most compatible match. No more waiting, no more guessing.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="space-y-4">
+                         <div class="w-16 h-16 bg-slate-800 rounded-full mx-auto flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-white">The "Thunderstorm"</h4>
+                        <p class="text-gray-400">You and your match enter a timed, exclusive chat. No distractions. Just a real conversation to see if the chemistry is there.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section id="philosophy" class="bg-slate-900/50 py-20 px-6 fade-in-section">
+            <div class="container mx-auto text-center">
+                <div class="w-20 h-20 bg-slate-800 rounded-full mx-auto flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-purple-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" /></svg>
+                </div>
+                <h3 class="mt-8 text-3xl md:text-4xl font-bold text-white">Embrace Your "Dark Clouds"</h3>
+                <p class="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">
+                    Other dating apps reward you for being popular. They encourage you to post your most generic, universally-liked photos and hide your quirky, polarizing traits. We believe that's the opposite of how you find real love. Thunderstruck is built on the philosophy that your vulnerabilities, your niche interests, and your unpopular opinions—your "dark clouds"—are what make a connection meaningful. Our system is designed to find the person who loves you for your unique storm, not just your sunny days.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            <p>&copy; 2025 Thunderstruck. All Rights Reserved.</p>
+            <div class="mt-4 space-x-6">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <span>&middot;</span>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for fade-in animations on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.fade-in-section');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+</body>
+</html>
